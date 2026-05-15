@@ -1,0 +1,42 @@
+<!--
+ * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
+ * @Date: 2026-05-13 17:33:03
+ * @LastEditors: Martin xyc1773594685@163.com
+ * @LastEditTime: 2026-05-13 22:18:06
+ * @FilePath: \src\todelete\myhtml3.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    import { useState } from 'react'
+
+    function App() {
+    // 1. 定义响应式变量
+    const [num, setNum] = useState(0)
+    const isShow = true
+
+    return (
+        <div>
+        {/* 2. 点击事件：驼峰 onClick，调用函数 */}
+        <button onClick={() => setNum(num + 1)}>+1</button>
+
+        {/* 3. 插值：{变量} */}
+        <div>我是{num}</div>
+
+        {/* 4. 条件渲染 */}
+        {isShow ? <div>显示</div> : null}
+        </div>
+    )
+    }
+
+    export default App
+    </script>
+</body>
+</html>
